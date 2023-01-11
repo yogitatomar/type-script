@@ -1,0 +1,17 @@
+The keyof type operator  :------
+The keyof operator takes an object type and produces a string or numeric literal union of its keys. The following type P is the same type as “x” | “y”:
+
+
+The typeof type operator :------------
+JavaScript already has a typeof operator you can use in an expression context:
+
+// Prints "string"
+console.log(typeof "Hello world");
+
+Indexed Access Types:--------------------
+We can use an indexed access type to look up a specific property on another type:
+
+type Person = { age: number; name: string; alive: boolean };
+type Age = Person["age"];
+     
+type Age = number

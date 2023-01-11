@@ -1,3 +1,4 @@
+"use strict";
 function apierror(msg, code) {
     throw { message: msg, code: code };
 }
